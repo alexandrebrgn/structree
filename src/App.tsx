@@ -1,14 +1,13 @@
-import './App.css'
-import {useContext} from "react";
-import {MyStructreeContext} from "./context/context.tsx";
+import './styles/App.css'
+import useStructree from "./hooks/hooks.tsx";
 
 function App() {
 
-  const[rawTree, setRawTree] = useContext(MyStructreeContext)
+  const {rawTree} = useStructree()
 
   return (
     <div className="h-screen w-screen flex items-center">
-      <div className="mx-auto"></div>
+      <div className="mx-auto">{rawTree}</div>
     </div>
   )
 }
