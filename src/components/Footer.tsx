@@ -3,7 +3,7 @@ import {GithubIcon, InstagramIcon, RainbowIcon, TwitterIcon} from "lucide-react"
 
 export default function Footer() {
   return (
-    <div className="absolute bottom-0 w-full h-auto flex justify-between border-t p-6">
+    <div className="w-full h-auto flex justify-between border-t p-4">
       <div className="flex items-center justify-center gap-2">
         <RainbowIcon/>
         <p className="underline">Made by Alexandre Bourguignon</p>

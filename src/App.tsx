@@ -9,11 +9,15 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
-      <div className="h-screen w-screen flex items-center">
-        <div className="mx-auto">{rawTree}</div>
+      <div className="h-screen w-screen flex-col flex items-center">
+        <Navbar/>
+        <div className="w-full h-full flex items-center justify-center">
+          <div className="mx-auto">
+            {rawTree}
+          </div>
+        </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
     </div>
   )
 }
